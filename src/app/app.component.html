@@ -1,0 +1,57 @@
+<section class="intro">
+  <div class="gradient-custom-1 h-100">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="table-responsive bg-white">
+              <h2>Employees List</h2>
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>EMAIL </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let employee of employees">
+                    <td>{{employee.id}}</td>
+                    <td>{{employee.firstname}}</td>
+                    <td>{{employee.lastname}}</td>
+                    <td>{{employee.email}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-responsive bg-white">
+              <h2>Products List</h2>
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>PRODUCT NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>PRICE </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of products">
+                    <td>{{product.pid}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.price}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<router-outlet />
